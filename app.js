@@ -2,7 +2,6 @@
 const config = window.HAMLET_CONFIG;
 const cta = document.querySelector('#cta');
 const ctaNote = document.querySelector('#ctaNote');
-const privateNote = document.querySelector('#privateNote');
 let rating = 0;
 const ratings = ['Niet tevreden', 'Weinig tevreden', 'Matig tevreden', 'Tevreden', 'Heel tevreden'];
 const path = 'M12 3l2.8 5.7 6.3.9-4.55 4.43 1.08 6.26L12 17.34l-5.63 2.95 1.08-6.26L2.9 9.6l6.3-.9L12 3z';
@@ -31,18 +30,18 @@ function getReviewUrl() {
 function updateCta() {
   if (!rating) {
     cta.hidden = true;
-    privateNote.hidden = true;
     ctaNote.hidden = false;
     ctaNote.textContent = 'Kies je sterren om verder te gaan.';
     return;
   }
-  // Same button and same Google destination for every score; the private message is an optional extra.
-  const url = getReviewUrl();
+  // Identical button for every score: only the destination depends on the rating.
+  // Without a configured e-mail address the private form cannot work, so every score goes to Google.
+  const url = rating < 4 && config.email
+    ? 'prive-bericht.html?note=' + rating
+    : getReviewUrl();
   cta.hidden = !url;
   ctaNote.hidden = Boolean(url);
   ctaNote.textContent = url ? '' : 'De link werkt even niet. Probeer het later opnieuw.';
   if (url) cta.setAttribute('href', url);
-  privateNote.hidden = !config.email;
-  document.querySelector('#privateLink').setAttribute('href', 'prive-bericht.html?note=' + rating);
 }
 updateCta();
