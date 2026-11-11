@@ -5,7 +5,8 @@ Reviewpagina voor de leerlingen van Hamlet Gitaar, gebaseerd op
 
 - [Site op GitHub Pages](https://savajulian.github.io/Hamlet-Review-pagina/)
 
-GitHub Pages publiceert de root van de branch `main`.
+GitHub Pages publiceert de branch `gh-pages`; hou die gelijk met `main`
+(`git push origin main:gh-pages`).
 
 `index.html` is de hoofdpagina. `config.js` bevat de Google-reviewlink en het
 e-mailadres voor privéberichten. Er is geen vestigingskeuze. Na de sterrenkeuze
