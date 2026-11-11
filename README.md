@@ -1,6 +1,6 @@
-# Review pagina — Hamlet Gitaar
+# Review pagina — Hamlet Gitaarles
 
-Reviewpagina voor de leerlingen van Hamlet Gitaar, gebaseerd op
+Reviewpagina voor de leerlingen van Hamlet Gitaarles, gebaseerd op
 [review-pagina](https://github.com/SavaJulian/review-pagina) (France Eco Concept).
 
 - [Site op GitHub Pages](https://savajulian.github.io/Hamlet-Review-pagina/)

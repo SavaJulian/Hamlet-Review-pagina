@@ -16,7 +16,7 @@ form.addEventListener('submit', event => {
   comment.setCustomValidity('');
   const visitorName = name.value.trim();
   const visitorEmail = email.value.trim();
-  const subject = 'Bericht van een leerling — Hamlet Gitaar';
+  const subject = 'Bericht van een leerling — Hamlet Gitaarles';
   const body = `Dag Hamlet,\n\nScore: ${note ? note + '/5' : 'Niet ingevuld'}\nNaam: ${visitorName || 'Niet ingevuld'}\nE-mail: ${visitorEmail}\n\n${comment.value.trim()}\n\nGroetjes${visitorName ? ',\n' + visitorName : ','}`;
   const link = document.querySelector('#mailtoLink');
   link.href = `mailto:${config.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
