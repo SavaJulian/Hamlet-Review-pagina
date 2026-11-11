@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Stuur Hamlet Gitaar een privébericht over je gitaarles.">
+<meta name="robots" content="noindex">
+<title>Jouw privébericht — Hamlet Gitaar</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--navy:#3a2415;--green:#9c5212;--lime:#e8a04a;--ink:#2b211b;--muted:#6d5f55;--paper:#faf4ea;--line:#eadfce}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6}header{max-width:1100px;margin:auto;padding:28px 32px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;text-align:center}header img{width:215px;height:auto}.brand{font-family:Georgia,"Times New Roman",serif;font-size:26px;font-weight:700;color:var(--navy)}header span{font-size:13px;color:var(--muted)}main{max-width:620px;margin:22px auto 50px;padding:0 22px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;color:var(--green);text-align:center;margin:0 0 15px}h1{font-size:clamp(30px,5vw,43px);line-height:1.15;letter-spacing:-1.3px;text-align:center;color:var(--navy);margin:0 0 17px}.intro{text-align:center;color:var(--muted);max-width:450px;margin:0 auto 30px}.card{padding:32px;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 15px 50px #26362508}.summary{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 16px;text-align:center;font-size:14px;color:var(--muted);padding-bottom:22px;border-bottom:1px solid var(--line);margin:0 0 25px}.summary strong{color:var(--navy)}form label{display:block;font-weight:700;font-size:14px;margin-top:15px}form label span{font-weight:400;color:var(--muted)}input[type=text],input[type=email],textarea{display:block;width:100%;margin-top:7px;border:1px solid #cfc2b0;border-radius:9px;padding:12px;font:inherit;background:#fff;color:var(--ink)}textarea{resize:vertical;min-height:140px}.button{display:flex;justify-content:center;align-items:center;gap:12px;width:100%;margin-top:20px;padding:14px 18px;border-radius:11px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;transition:background .15s;border:1px solid var(--navy);min-height:52px;background:var(--navy);color:#fff}.button:hover{background:#26170d}.button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--green);outline-offset:3px}.note{font-size:12px;color:var(--muted);text-align:center;margin:11px 0 0}.message{font-size:14px;color:var(--green);text-align:center;margin-top:14px}.back{display:block;text-align:center;margin-top:20px;font-size:14px;color:var(--navy)}footer{text-align:center;font-size:12px;color:var(--muted);padding:0 20px 25px}footer a{color:var(--navy)}[hidden]{display:none!important}@media(max-width:520px){header{padding:22px}header img{width:175px}header span{display:none}main{margin:15px auto 30px;padding:0 16px}.card{padding:25px 20px}.intro{font-size:15px}h1{letter-spacing:-.7px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Centered layout across both feedback pages. */
+.card{text-align:center}.location{flex-direction:column;justify-content:center;gap:10px}.location select{max-width:100%;min-width:200px;text-align:center}form label{text-align:center}input[type=text],input[type=email],textarea{text-align:center}
+</style>
+</head>
+<body>
+<header><div class="brand">Hamlet Gitaar</div></header>
+<main><p class="eyebrow">Een berichtje voor Hamlet</p><h1>Ik luister graag.</h1><p class="intro">Viel er iets tegen of zit je nog met een vraag? Vertel het me, dan kan ik ermee aan de slag en je iets laten weten.</p>
+<section class="card" aria-label="Privébericht">
+<p class="summary" id="context"></p>
+<form id="form">
+<label for="email">Je e-mailadres <span>(zodat ik kan antwoorden)</span></label><input id="email" type="email" autocomplete="email" maxlength="160" required>
+<label for="name">Je naam <span>(mag, hoeft niet)</span></label><input id="name" type="text" autocomplete="name" maxlength="120">
+<label for="comment">Je bericht</label><textarea id="comment" required maxlength="3000" placeholder="Wat kan er beter, of wat wil je me vragen?"></textarea>
+<button class="button" type="submit">Maak mijn e-mail klaar <span aria-hidden="true">↗</span></button>
+<p class="note">Deze knop opent je mailapp met je bericht al ingevuld. Kijk het na en verstuur het zelf. Er wordt niets automatisch verzonden.</p>
+<p id="mailStatus" class="message" role="status"></p>
+</form>
+<a class="back" id="back" href="index.html">← Terug naar mijn sterren</a>
+</section>
+</main>
+<footer>Hamlet Gitaar · gitaarlessen</footer>
+<a id="mailtoLink" hidden></a>
+<script src="config.js"></script><script src="prive-bericht.js"></script>
+</body></html>
