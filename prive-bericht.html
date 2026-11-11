@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Stuur Hamlet Gitaar een privébericht over je gitaarles.">
+<meta name="theme-color" content="#8e1717">
 <meta name="robots" content="noindex">
 <title>Jouw privébericht — Hamlet Gitaar</title>
 <link rel="icon" href="data:,">
@@ -11,6 +12,21 @@
 
 /* Centered layout across both feedback pages. */
 .card{text-align:center}.location{flex-direction:column;justify-content:center;gap:10px}.location select{max-width:100%;min-width:200px;text-align:center}form label{text-align:center}input[type=text],input[type=email],textarea{text-align:center}
+
+/* Hamlet Gitaar: flamenco-thema (diep rood met lunares, goud, blonde flamencogitaar). */
+:root{--navy:#1f120e;--green:#a11d1d;--lime:#f0b429;--ink:#2b1c16;--muted:#6f5d52;--paper:#8e1717;--line:#eadfce;--cream:#fff3dc}
+html{background:#8e1717}
+body{background-color:#8e1717;background-image:radial-gradient(circle at 50% -10%,#b3262099 0,#8e171700 60%),radial-gradient(#00000022 6px,transparent 7px),radial-gradient(#00000022 6px,transparent 7px);background-size:100% 100%,56px 56px,56px 56px;background-position:0 0,0 0,28px 28px;background-attachment:scroll;min-height:100svh}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:24px;font-weight:700;letter-spacing:.5px;color:var(--cream);display:inline-flex;flex-direction:column;align-items:center;gap:6px}
+.brand::after{content:"";width:54px;height:3px;border-radius:3px;background:var(--lime)}
+h1{font-family:Georgia,"Times New Roman",serif;color:var(--cream);letter-spacing:-.5px;text-wrap:balance}
+h1 em{font-style:italic;color:var(--lime)}
+.intro{color:#f6dcc6}.eyebrow{color:var(--lime)}
+.card{border:0;box-shadow:0 22px 60px #2a070780,0 0 0 1px #ffffff14}
+.star-option svg{fill:#fbf3e4;stroke:#b79a7c}.star-option.selected svg{fill:var(--lime);stroke:#b9770e}
+.button{background:var(--navy);border-color:var(--navy);border-radius:14px;letter-spacing:.2px}.button:hover{background:#a11d1d;border-color:#a11d1d}
+.button:focus-visible,input:focus-visible,textarea:focus-visible{outline-color:var(--lime)}
+footer{color:#f1cdb6}footer a{color:var(--cream)}
 </style>
 </head>
 <body>

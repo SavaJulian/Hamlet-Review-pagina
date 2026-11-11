@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Hoe vond je je gitaarles bij Hamlet Gitaar? Geef je sterren en schrijf een korte Google-review.">
+<meta name="theme-color" content="#8e1717">
 <meta name="robots" content="noindex">
 <title>Jouw review — Hamlet Gitaar</title>
 <link rel="icon" href="data:,">
@@ -33,14 +34,33 @@
  .review-stage{grid-column:2;grid-row:1 / 5;margin:0}.mascot-peek{display:none}.review-stage .card{padding:12px 14px}.location{gap:4px;padding-bottom:7px;margin-bottom:7px}.location label{line-height:1.3}.location select{min-height:44px;padding:5px 25px 5px 10px}legend{font-size:15px;line-height:1.3;margin-bottom:4px}.stars{gap:4px}.star-option{width:44px;height:44px}.scale{font-size:10px;line-height:1.3;margin-top:2px}#ratingText{font-size:12px;line-height:1.3;min-height:16px;margin-top:4px}.actions{margin-top:6px;padding-top:6px}.button{min-height:44px;padding:8px;font-size:13px}.actions .note{font-size:11px;line-height:1.3;margin:0}
 }
 
-/* Hamlet Gitaar: geen mascotte. */
-.review-stage{margin-top:0!important}
+/* Hamlet Gitaar: flamenco-thema (diep rood met lunares, goud, blonde flamencogitaar). */
+:root{--navy:#1f120e;--green:#a11d1d;--lime:#f0b429;--ink:#2b1c16;--muted:#6f5d52;--paper:#8e1717;--line:#eadfce;--cream:#fff3dc}
+html{background:#8e1717}
+body{background-color:#8e1717;background-image:radial-gradient(circle at 50% -10%,#b3262099 0,#8e171700 60%),radial-gradient(#00000022 6px,transparent 7px),radial-gradient(#00000022 6px,transparent 7px);background-size:100% 100%,56px 56px,56px 56px;background-position:0 0,0 0,28px 28px;background-attachment:scroll;min-height:100svh}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:24px;font-weight:700;letter-spacing:.5px;color:var(--cream);display:inline-flex;flex-direction:column;align-items:center;gap:6px}
+.brand::after{content:"";width:54px;height:3px;border-radius:3px;background:var(--lime)}
+h1{font-family:Georgia,"Times New Roman",serif;color:var(--cream);letter-spacing:-.5px;text-wrap:balance}
+h1 em{font-style:italic;color:var(--lime)}
+.intro{color:#f6dcc6}.eyebrow{color:var(--lime)}
+.card{border:0;box-shadow:0 22px 60px #2a070780,0 0 0 1px #ffffff14}
+.star-option svg{fill:#fbf3e4;stroke:#b79a7c}.star-option.selected svg{fill:var(--lime);stroke:#b9770e}
+.button{background:var(--navy);border-color:var(--navy);border-radius:14px;letter-spacing:.2px}.button:hover{background:#a11d1d;border-color:#a11d1d}
+.button:focus-visible,input:focus-visible,textarea:focus-visible{outline-color:var(--lime)}
+footer{color:#f1cdb6}footer a{color:var(--cream)}
+
+/* Flamencogitaar die over de rand van de kaart leunt (op de plaats van de mascotte). */
+.review-stage{margin-top:128px}.mascot-peek{top:-112px;width:370px;max-width:none}.mascot-peek svg{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 12px #2a070766)}.review-stage .card{padding-top:44px}
+@media(max-width:600px){.review-stage{margin-top:96px}.mascot-peek{top:-84px;width:290px}.review-stage .card{padding-top:30px}}
+@media(max-width:600px) and (max-height:650px){.review-stage{margin-top:62px}.mascot-peek{top:-55px;width:200px}.review-stage .card{padding-top:22px}}
+@media(max-width:479px) and (max-height:550px){.mascot-peek{display:none}.review-stage{margin-top:8px}}
+@media(max-height:480px) and (min-width:480px){.review-stage{margin:0}.mascot-peek{display:none}.review-stage .card{padding:12px 14px}h1,.intro,footer{text-align:left}header{align-items:flex-start}}
 </style>
 </head>
 <body>
 <header><div class="brand">Hamlet Gitaar</div></header>
-<main><h1>Jij speelt gitaar.<br>Jij deelt de sterren uit.</h1><p class="intro">Bedankt voor de les! Wil je me in één minuutje laten weten hoe je het vond? — Hamlet</p>
-<div class="review-stage"><section class="card" aria-label="Jouw ervaring">
+<main><h1>Jij speelt gitaar.<br><em>Jij deelt de sterren uit.</em></h1><p class="intro">Bedankt voor de les! Wil je me in één minuutje laten weten hoe je het vond? — Hamlet</p>
+<div class="review-stage"><div class="mascot-peek" aria-hidden="true"><svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="top" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6d27c"/><stop offset=".55" stop-color="#eab95a"/><stop offset="1" stop-color="#d99a3c"/></linearGradient><linearGradient id="head" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a5326"/><stop offset="1" stop-color="#6b3c18"/></linearGradient></defs><g transform="rotate(-7 200 75)"><path d="M352 60h34c6 0 9 4 9 9v12c0 5-3 9-9 9h-34z" fill="url(#head)" stroke="#3d2010" stroke-width="2"/><g fill="#f3e6c8" stroke="#3d2010" stroke-width="1.2"><circle cx="362" cy="56" r="4"/><circle cx="374" cy="56" r="4"/><circle cx="386" cy="57" r="4"/><circle cx="362" cy="94" r="4"/><circle cx="374" cy="94" r="4"/><circle cx="386" cy="93" r="4"/></g><rect x="244" y="64" width="110" height="22" fill="#24140d" stroke="#120904" stroke-width="1.5"/><g stroke="#d9b56a" stroke-width="1.6"><path d="M262 64v22M279 64v22M295 64v22M310 64v22M324 64v22M337 64v22"/></g><rect x="350" y="63" width="4" height="24" fill="#f3e6c8"/><path d="M33 75C33 30 73 11 109 13c27 1 36 19 56 19 15 0 25-6 45-5 30 1 43 23 43 48s-13 47-43 48c-20 1-30-5-45-5-20 0-29 18-56 19C73 139 33 120 33 75z" fill="url(#top)" stroke="#5a3214" stroke-width="3"/><path d="M39 75C39 36 76 19 109 20c24 1 33 19 56 19 16 0 26-6 45-5 25 1 37 20 37 41s-12 40-37 41c-19 1-29-5-45-5-23 0-32 18-56 19C76 131 39 114 39 75z" fill="none" stroke="#fff3c9" stroke-width="1" opacity=".7"/><path d="M118 79h64c-2 20-14 30-32 32-20 2-34-10-32-32z" fill="#fffdf4" opacity=".55" stroke="#ffffff" stroke-width="1"/><circle cx="184" cy="75" r="31" fill="none" stroke="#a11d1d" stroke-width="3"/><circle cx="184" cy="75" r="27" fill="none" stroke="#1f120e" stroke-width="3" stroke-dasharray="3 3"/><circle cx="184" cy="75" r="23.5" fill="none" stroke="#2f6b3c" stroke-width="2"/><circle cx="184" cy="75" r="20" fill="#1c0e09"/><rect x="74" y="50" width="14" height="50" rx="2" fill="#3a2010" stroke="#1c0e09" stroke-width="1.5"/><rect x="79" y="56" width="3" height="38" fill="#f3e6c8"/><g stroke="#fffaf0" stroke-linecap="round"><path d="M80 66.500H352" stroke-width="1.5"/><path d="M80 69.900H352" stroke-width="1.3"/><path d="M80 73.300H352" stroke-width="1.1"/><path d="M80 76.700H352" stroke-width=".9"/><path d="M80 80.100H352" stroke-width=".8"/><path d="M80 83.500H352" stroke-width=".7"/></g></g></svg></div><section class="card" aria-label="Jouw ervaring">
 <fieldset><legend>Hoeveel sterren geef je je gitaarlessen?</legend><div class="stars" id="stars"></div><div class="scale" aria-hidden="true"><span>Niet tevreden</span><span>Heel tevreden</span></div><p id="ratingText" aria-live="polite">Kies 1 tot 5 sterren.</p></fieldset>
 <div class="actions"><a class="button" id="cta" hidden>Deel mijn ervaring <span aria-hidden="true">↗</span></a><p id="ctaNote" class="note">Kies je sterren om verder te gaan.</p></div>
 </section></div>
